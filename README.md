@@ -2,6 +2,9 @@
 
 > You can clone this project and just write to terminal npm install and npm start
 
+[url=https://www.hizliresim.com/ql3ijdj][img]https://i.hizliresim.com/ql3ijdj.png[/img][/url]
+
+[url=https://www.hizliresim.com/q8veuh8][img]https://i.hizliresim.com/q8veuh8.png[/img][/url]
 
 ## Table of Contents 
 
