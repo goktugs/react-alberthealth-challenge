@@ -2,10 +2,10 @@
 
 > You can clone this project and just write to terminal npm install and npm start
 
-![alt text](https://www.hizliresim.com/ql3ijdj)
-![alt text](https://www.hizliresim.com/q8veuh8)
+![alt text](https://i.hizliresim.com/ql3ijdj.png)
+![alt text](https://i.hizliresim.com/q8veuh8.png)
 
-## Table of Contents 
+## Table of Contents
 
 > If your `README` has a lot of info, section headers might be nice.
 
