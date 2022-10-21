@@ -1,10 +1,7 @@
 # Albert Health tmdb api assignment
 
-> Subtitle or Short Description Goes Here
+> You can clone this project and just write to terminal npm install and npm start
 
-> ideally one sentence
-
-> include terms/tags that can be searched
 
 **Badges will go here**
 
