@@ -30,6 +30,7 @@ const Search = () => {
         placeholder="Search (press enter)"
         onKeyDown={(e) => onKeyUp(e)}
         value={value}
+        color="black"
         onChange={(e) => setValue(e.target.value)}
       />
     </Box>

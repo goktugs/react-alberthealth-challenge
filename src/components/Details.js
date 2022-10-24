@@ -13,7 +13,7 @@ const Details = () => {
   let params = useParams();
   let navigate = useNavigate();
 
-  const { radioValue, setRadioValue } = useContext(MovieContext);
+  const { radioValue } = useContext(MovieContext);
 
   const [movie, setMovie] = useState();
 
@@ -23,6 +23,7 @@ const Details = () => {
     );
     const movie = await data.json();
     setMovie(movie);
+    console.log(data);
   };
 
   useEffect(() => {
@@ -82,7 +83,7 @@ const Details = () => {
             <Text color={'white'}>
               Genre:{' '}
               {movie.genres.map((genre) => (
-                <span>{genre.name}</span>
+                <span>{genre.name} </span>
               ))}{' '}
             </Text>
           </Grid>

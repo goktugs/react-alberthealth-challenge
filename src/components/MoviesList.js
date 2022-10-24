@@ -1,21 +1,27 @@
 import React, { useContext, useEffect } from 'react';
 import Movie from './Movie';
 import MovieContext from '../MovieContext';
-import { Grid, Box, Image, Text, Flex } from '@chakra-ui/react';
+import { Grid, Box, Text } from '@chakra-ui/react';
 
 import { motion } from 'framer-motion';
 
 const MoviesList = () => {
-  const { filtered, fetchPopular, header, setActiveGenre, radioValue } =
-    useContext(MovieContext);
+  const {
+    filtered,
+    fetchPopular,
+    header,
+    radioValue,
+    fetchTopRated,
+    fetchUpcoming,
+  } = useContext(MovieContext);
 
   useEffect(() => {
-    if (
-      header === 'Popular Movies' ||
-      'Top Rated Movies' ||
-      'Upcoming Movies'
-    ) {
+    if (header === 'Popular Movies') {
       fetchPopular();
+    } else if (header === 'Top Rated Movies') {
+      fetchTopRated();
+    } else if (header === 'Upcoming Movies') {
+      fetchUpcoming();
     }
   }, [radioValue]);
 
@@ -23,7 +29,7 @@ const MoviesList = () => {
     <>
       <Box>
         <Text pl={'30px'} pt={'30px'} color={'white'} fontSize={'3xl'}>
-          {filtered.length != 0 ? header : ''}
+          {filtered.length !== 0 ? header : ''}
         </Text>
         <motion.div layout>
           <Grid

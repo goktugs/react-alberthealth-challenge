@@ -18,7 +18,11 @@ export function MovieProvider({ children }) {
     const movies = await data.json();
     setMovies(movies.results);
     setFiltered(movies.results);
-    setHeader('Popular Movies');
+    if (radioValue === 'tr-TR') {
+      setHeader('Popüler Filmler');
+    } else {
+      setHeader('Popular Movies');
+    }
   };
 
   const fetchSearch = async (query) => {
@@ -38,7 +42,11 @@ export function MovieProvider({ children }) {
     const movies = await data.json();
     setMovies(movies.results);
     setFiltered(movies.results);
-    setHeader('Top Rated Movies');
+    if (radioValue === 'tr-TR') {
+      setHeader('En Çok Oy Alan');
+    } else {
+      setHeader('Top Rated Movies');
+    }
   };
   const fetchUpcoming = async () => {
     const data = await fetch(
@@ -47,7 +55,11 @@ export function MovieProvider({ children }) {
     const movies = await data.json();
     setMovies(movies.results);
     setFiltered(movies.results);
-    setHeader('Upcoming Movies');
+    if (radioValue === 'tr-TR') {
+      setHeader('Vizyona Girecekler');
+    } else {
+      setHeader('Upcoming Movie');
+    }
   };
 
   const addToFavourites = (movie) => {

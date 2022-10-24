@@ -13,8 +13,6 @@ import {
 import { useContext } from 'react';
 import MovieContext from '../MovieContext';
 
-import { useRadioGroup } from '@chakra-ui/react';
-
 const Sidebar = () => {
   const {
     fetchPopular,
@@ -24,8 +22,6 @@ const Sidebar = () => {
     radioValue,
     setRadioValue,
   } = useContext(MovieContext);
-
-  console.log(radioValue);
 
   return (
     <Flex minH={'100vh'} minW="20%" bg="gray.900" flexDir={'column'}>
@@ -53,7 +49,7 @@ const Sidebar = () => {
             w="100%"
             color={'white'}
           >
-            Popular Movies
+            {radioValue === 'tr-TR' ? `Popüler Filmler` : `Popular Films`}
           </Text>
         </Button>
 
@@ -80,7 +76,7 @@ const Sidebar = () => {
             w="100%"
             color={'white'}
           >
-            Top Rated Movies
+            {radioValue === 'tr-TR' ? `En Çok Oy Alan` : `Top Rated Movies`}{' '}
           </Text>{' '}
         </Button>
 
@@ -107,7 +103,7 @@ const Sidebar = () => {
             w="100%"
             color={'white'}
           >
-            Upcoming Movies
+            {radioValue === 'tr-TR' ? `Vizyona Girecekler` : `Upcoming Movie`}{' '}
           </Text>
         </Button>
       </Flex>
@@ -168,7 +164,7 @@ const Sidebar = () => {
             w="100%"
             color={'white'}
           >
-            Favourite Movies
+            {radioValue === 'tr-TR' ? `Favori Filmler` : `Favourite Movies`}{' '}
           </Text>
         </Button>
       </Flex>
