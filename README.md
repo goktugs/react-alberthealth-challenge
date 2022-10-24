@@ -8,7 +8,6 @@ Vercele deploy ettiğim için main branch'i geliştirmeye devam ediyorum.
 ![alt text](https://i.hizliresim.com/ql3ijdj.png)
 ![alt text](https://i.hizliresim.com/2x31mav.png)
 
-![alt text](https://i.hizliresim.com/q8veuh8.png)
 
 ## Table of Contents
 
