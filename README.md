@@ -4,7 +4,7 @@ https://react-alberthealth-challenge.vercel.app/
 
 > You can clone this project and just write to terminal npm install and npm start
 
-Kendimce birkaç feature ekledim (search,test gibi) ama overengineering olmaması adına verilen süreye kadar yaptıklarım farklı bir branchte.
+Kendimce birkaç feature ekledim (search,test,responsive gibi) ama overengineering olmaması adına verilen süreye kadar yaptıklarım farklı bir branchte.
 Vercele deploy ettiğim için main branch'i geliştirmeye devam ediyorum.
 
 ![alt text](https://i.hizliresim.com/ql3ijdj.png)
