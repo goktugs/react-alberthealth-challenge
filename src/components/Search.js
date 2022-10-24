@@ -1,5 +1,4 @@
 import React, { useState, useContext } from 'react';
-import { RiSearchLine } from 'react-icons/ri';
 import { Input, Box } from '@chakra-ui/react';
 
 import MovieContext from '../MovieContext';
